@@ -2,29 +2,22 @@
 // src/pages/index.astro
 
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Card from "../components/Card.astro";
+import Card from "../components/Card";
+import Carousel from "../components/Carousel";
+import Profile from "../components/Profile";
 ---
 
-<!-- profile2.webp you can remove | Photo <a href="https://unsplash.com/es/@charlesdeluvio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">charlesdeluvio</a> en <a href="https://unsplash.com/es/fotos/hombre-con-gorro-negro-kVg2DQTAK7c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-   -->
-
-<!-- You can replace the card's data with your own here. -->
-<BaseLayout title="Personal Card Portfolio Astro" description="Meta description. Here goes your page description. Provide a clear and concise summary of the content.">
-	<Card
-	  name="John Smith"
-	  position="Web Developer"
-	  aboutMe={`Hi there! I'm John, a seasoned web developer passionate about crafting clean and dynamic websites. With 5 years of experience, I specialize in front-end and back-end development using HTML, CSS, JavaScript, and frameworks like React and Angular.\n\nI thrive on creating user-centric designs and optimizing performance for seamless browsing experiences.\n\nLet's collaborate TOGHETER!`}
-	  linkedin="https://www.linkedin.com/in/#"
-	  github="https://github.com/alcarazbrian"
-	  cvLink="/files/resume-cv.pdf"
-	  profileImage="/images/profile2.webp"
-	/>
+<BaseLayout title = "Arthur Kuo | Full-Stack Developer & AI Service Expert", description="Arthur Kuo, a full-stack developer with expertise in Python, Node.js, and Gen AI services. Specializing in creating dynamic websites and user-centric designs.">
+	<Card>
+		<Profile
+			key="1"
+			name="Arthur Kuo"
+			position="Web Developer"
+			aboutMe="Hi there! I'm Arthur Kuo, a seasoned web developer with 1 year of experience in Full-stack development and Gen AI service design. \n\nSpecialties:\n Python, Node.js, React, MySQL, Elasticsearch, and Redis."
+			linkedin={import.meta.env.LINKEDIN_URL}
+			github={import.meta.env.GITHUB_URL}
+			cvLink="/files/resume-cv.pdf"
+			profileImage="/images/profile2.jpg"
+		/>
+	</Card>
 </BaseLayout>
-
-<!--
-	"Hi there!, I'm Brian. I hope this small template helps you gain visibility while you build great projects. Thank you for using it. I wish you success in everything you set out to do; you will surely achieve great things.
-
-	Here is my GitHub {https://github.com/alcarazbrian}. You can help me by following me, giving a Star to the template, and sharing it so others can see and use it.
-
-	Have a great day!"
- -->

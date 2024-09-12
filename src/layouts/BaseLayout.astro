@@ -1,13 +1,23 @@
 ---
 //src/layouts/BaseLayout.astro
-const { title = 'Personal Card Astro', description } = Astro.props;
+const { title = "Arthur KUo's", description } = Astro.props;
 
 import '../styles/global.css';
 ---
+
 <!-- Here you can change everything related to the head, favicon, icons, and fonts. -->
 
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JH7DBEDEXE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JH7DBEDEXE');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content={description}>
