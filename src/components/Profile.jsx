@@ -1,6 +1,6 @@
 import '../styles/card.css';
 
-const Profile = ({name, position, aboutMe, linkedin, github, cvLink, profileImage }) => {
+const Profile = ({name, position, aboutMe, linkedin, github, medium, cvLink, profileImage }) => {
     return(
         <div className="card-container">
             <div className="descripcion">
@@ -19,6 +19,12 @@ const Profile = ({name, position, aboutMe, linkedin, github, cvLink, profileImag
                             GitHub
                         </span>
                         <i className="bi bi-github"></i>
+                    </a>
+                    <a href={medium} className="hover-text" target="_blank">
+                        <span className="tooltip-text" id="fade">
+                            Medium
+                        </span>
+                        <i className="bi bi-medium"></i>
                     </a>
                     <a href={cvLink} className="hover-text" target="_blank">
                         <span className="tooltip-text" id="fade">
