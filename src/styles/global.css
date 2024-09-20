@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    background-color: #131516;
+}
+
+button{
+    background-color: #131516; color: #e7e7e7;
+    color: #e7e7e7;
+    border: 2px solid #131516;
+    font-size: 24px;
+}
+  
+button:hover {
+    background-color: #131516;
+    color: white;
+    font-size: 24px;
+}

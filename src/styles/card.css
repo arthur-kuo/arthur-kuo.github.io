@@ -28,8 +28,9 @@
 
 /* CARD */
 .card-container{
+    position: relative;
     display: flex;
-    width: 650px;
+    width: 750px;
     height: auto;
     background: linear-gradient(to left,rgba(173, 173, 173, 1), rgba(38, 38, 38, 1)); /* #2FEBD4, #DEFFFD*/
     border-radius: 12px;
