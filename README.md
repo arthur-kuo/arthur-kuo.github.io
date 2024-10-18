@@ -1,4 +1,4 @@
 # Personal Professional Card Astro
-- https://www.arthurkuo.com/
+- [Website] (https://www.arthurkuo.com/)
 - This project is for learning Astro, and it's still in progress.
 - You can check the original template from Vercel.com
